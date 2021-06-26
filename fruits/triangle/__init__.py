@@ -1,0 +1,1 @@
+from .code import triagle_square
