@@ -8,7 +8,7 @@ from telebot import types
 @bot.message_handler(content_types=['text'])
 def get_text_message(message):
     if message.text == 'Привет':
-        bot.send_message(message.from_user.id, '🎸🎸🎸 Добро пожаловать, {0.first_name}!!!\n Мы магазин музыкальных инструментов 🎸🎸🎸')
+        bot.send_message(message.from_user.id, '🎸🎸🎸 Добро пожаловать!!!\n Мы магазин музыкальных инструментов 🎸🎸🎸')
         
         keyboard = types.InlineKeyboardMarkup()
 
