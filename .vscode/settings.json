@@ -3,5 +3,7 @@
                 "--load-plugins",
                 "pylint-flask"
     ],
+    "git.enabled": false,
+    "python.pythonPath": "/usr/local/bin/python3",
         
 }

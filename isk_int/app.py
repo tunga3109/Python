@@ -29,14 +29,17 @@ def command():
     
     return zadanie
 
-def makesmth(zadanie):
-    if 'open website' in zadanie:
-        url = 'https://vk.com/tungaa3109'
+def makesmth(zadanie,com,url):
+    if com in zadanie:
         webbrowser.open(url)
     elif 'stop' in zadanie:
         talk('да, конечно, без проблем')
         sys.exit() #выйти из приложения
 
 while True:
-    makesmth(command())
+    makesmth(command(),'open website','https://vk.com/tungaa3109')
+    makesmth(command(),'open weather','https://www.gismeteo.by')
+    makesmth(command(),'open games','https://www.arkadium.com/free-online-games/')
+    
+
 
