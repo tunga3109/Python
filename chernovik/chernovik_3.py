@@ -1,13 +1,10 @@
-class Test:
-    def print_text(self):
-        print('Hello')
-class Test_2(Test):
-    def print_text(self):
-        print('Hello2323232')
+from PyQt5 import uic
+from PyQt5.QtWidgets import QMainWindow
 
-test_2 = Test_2()
-test_2.print_text()
-    
+class MainWindow(QMainWindow):
+   def __init__(self):
+      super(MainWindow, self).__init__()
+      uic.loadUi('mainwindow.ui', self)
 
     
 

@@ -301,3 +301,5 @@
 #print(next(myit))
 #print(next(myit))
 
+#UI to PY
+#python3 -m PyQt5.uic.pyuic -x untitled.ui -o untitled.py
